@@ -1,0 +1,236 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config('constants.css_url') }}bootstrap.css?ver={{ getConfigValue('CSS_JS_VERSION')}}">
+    <link rel="stylesheet" type="text/css" href="{{ Config('constants.css_url') }}reset.css?ver={{ getConfigValue('CSS_JS_VERSION')}}">
+  
+    <style>
+        @font-face {
+            font-family: "THSarabun";
+            font-style: normal;
+            font-weight: normal;
+            /* src: url("{{ asset('pdf_fonts/THSarabun.ttf')}}") format("truetype"); */
+            src: url('pdf_fonts/THSarabun.ttf') format("truetype");
+        }  
+        @font-face {
+            font-family: "THSarabunbold";
+            font-style: normal;
+            font-weight: bolder;
+            /* src: url("{{ asset('pdf_fonts/THSarabun Bold.ttf')}}") format("truetype"); */
+            src: url('pdf_fonts/THSarabun Bold.ttf') format("truetype");
+        }      
+        body {
+            font-family: "THSarabun";
+            font-size: 25px; color: #000; 
+            background: #fff !important; line-height: 1.2;
+            letter-spacing: 0.1px;
+            padding-bottom:1.62cm; margin-top: 5px;
+        }
+        table {
+            border-collapse: collapse;  border:0; margin-bottom: 0;
+        }
+        th, td {
+            font-size: 20px; line-height: 22px;
+            border-collapse: collapse; vertical-align: top;
+            padding-top: 2px; padding-bottom: 2px;
+            padding-left: 5px; padding-right: 5px;
+        }
+        th, strong {
+            font-weight: bold;
+            font-family: "THSarabunbold";
+        }
+        img {
+            line-height: 1; vertical-align: top;
+        }
+        li , p {  margin-top:0; margin-bottom:2px; }
+        input { margin:0; margin-right:2px;  vertical-align:middle;  }
+        .border-0 { border:0; }
+        .border-0 td, .border-0 th { border:0 }
+    
+        a {
+            color: #000; text-decoration: none;
+        }
+        .title {
+            font-family: "THSarabunbold"; font-size: 30px;
+            line-height: 34px;
+        }
+        .sub-title {
+            font-family: "THSarabunbold"; font-size: 24px;
+            line-height: 28px; 
+        }
+        .data-table {
+            text-align: left;
+        }
+        .data-table th, .data-table td {
+            border-bottom: 1px solid #DCDCDC;
+            padding:8px 5px;
+        }
+        .border-0 {
+            border:none !important;
+        }
+
+    </style>
+
+    <body>
+
+    <footer></footer>
+    
+    <div style="padding-left:10px; padding-right:10px;">
+    <table cellspacing="0" cellpadding="0" border="0" align="center" style="padding:10px 0; width:1000; font-family: 'THSarabun';">
+        <!-- First row logo section-->
+        <tr>
+            <td style="border-bottom:1px solid #DCDCDC; padding-top: 15px; padding-bottom:15px;">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td style="width: 100px; padding-right:25px;"><img src="images/logo.png" alt="logo" height="52" style="max-height:50px;"></td>
+                        <td style="">                                
+                            Smoothgraph Company Limited  <br>
+                            78/75, Charoen Rat, Bang Khlo, Bang Kho Laem, Bangkok, 10120 <br> Tel. <a href="tel:0624321265" style="color:#000;"> 062-432-1265,  </a> , <a href="tel:0888847256" style="color:#000;">088-884-7256</a> Fax :- <br>
+                             Email: <a href="mailto:contact@smoothgraph.com" style="color:#000;">contact@smoothgraph.com</a> Website: <a href="www.smoothgraph.com" style="color:#000;">www.smoothgraph.com</a><br>Tax ID: 1234567891011           
+                        </td>
+                        <td align="right" style="">
+                            
+                            <table>
+                                <tr>
+                                    <td colspan="2" style="text-align:right;" class="title">Purchase Order</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right; padding-right: 8px;"><strong>No:</strong></td>
+                                    <td>PO-23-11-13-00001</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right; padding-right: 8px;"><strong>Issue:</strong></td>
+                                    <td>01/01/2024 </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right; padding-right: 8px;"><strong>Ref:</strong></td>
+                                    <td>ORD-RT-2566-11-13-00003</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Second row File upload section-->
+        <tr>
+            <td style="padding-top: 15px; border-bottom:1px solid #DCDCDC; padding-bottom:15px;">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td style="width:50%; padding: 0;">
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td colspan="2" class="sub-title">Vender</td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Vender:</td>
+                                    <td>Ammy Wong Company Limited  </td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Address:</td>
+                                    <td>1712 , Khwaeng Wat Phraya Krai, Khet Bang Kho Laem, Bangkok, Thailand, 10120</td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Tax ID:</td>
+                                    <td>1234567891011    <strong>Branch:</strong> Head Office</td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Contact:</td>
+                                    <td><strong>Tel:</strong> +66 0918192555    <strong>Fax:</strong> - <br>
+                                    <strong>Email:</strong> ammywong@gmail.com </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:50%; padding: 0;">
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td colspan="2" class="sub-title">Shipping Address</td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Name:</td>
+                                    <td>Smoothgraph Company Limited  </td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Address:</td>
+                                    <td>78/75, Charoen Rat, Bang Khlo, Bang Kho Laem, Bangkok, 10120</td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Delivery Date:</td>
+                                    <td>07/01/2024 </td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space: nowrap; padding-right:8px;  font-family: 'THSarabunbold';">Payment term:</td>
+                                    <td>14 days </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- 3rd row  section-->
+        <tr>
+            <td style="padding-top:5px; padding-bottom:15px;" valign="top">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" class="data-table">
+                    <tr>
+                        <th>No.</th>
+                        <th>SKU</th>
+                        <th style="width:28%;">Name</th>
+                        <th style="text-align:center;">Quantity</th>
+                        <th style="text-align:center;">Unit Price</th>
+                        <th style="text-align:right;">Amount</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Test00000001</td>
+                        <td>Product name</td>
+                        <td style="text-align:center;">1</td>
+                        <td style="text-align:center;">1,000.00</td>
+                        <td style="text-align:right;">1,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Test00000002</td>
+                        <td>Product name 2</td>
+                        <td style="text-align:center;">2</td>
+                        <td style="text-align:center;">300.21</td>
+                        <td style="text-align:right;">600.42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border-0"><strong>Remark</strong> </td>
+                        <td style="text-align:center;"><strong>Discount</strong></td>
+                        <td style="text-align: right;">0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border-0"> </td>
+                        <td style="text-align:center;"><strong>Sub Total</strong></td>
+                        <td style="text-align: right;">1,600.42</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="border-0"> </td>
+                        <td style="text-align:center;"><strong>Vat 7%</strong></td>
+                        <td style="text-align: right;">112.02</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"> </td>
+                        <td style="text-align:center;"><strong>Shipping</strong></td>
+                        <td style="text-align: right;">50.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Grand Total (Baht)</strong> </td>
+                        <td colspan="2">(One thousand seven hundred sixty-two point fourty-four)</td>
+                        <td style="text-align:center; background:#EAEAEA;"><strong>Grand Total</strong></td>
+                        <td style="text-align: right; background:#EAEAEA;">1,762.44</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+
+    </table>
+    </div>
+ 
+    </body>
+</html>
