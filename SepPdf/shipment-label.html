@@ -1,0 +1,155 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ Config('constants.css_url') }}bootstrap.css?ver={{ getConfigValue('CSS_JS_VERSION')}}">
+    <link rel="stylesheet" type="text/css" href="{{ Config('constants.css_url') }}reset.css?ver={{ getConfigValue('CSS_JS_VERSION')}}">
+  
+    <style>
+        @font-face {
+            font-family: "THSarabun";
+            font-style: normal;
+            font-weight: normal;
+            /* src: url("{{ asset('pdf_fonts/THSarabun.ttf')}}") format("truetype"); */
+            src: url('pdf_fonts/THSarabun.ttf') format("truetype");
+        }  
+        @font-face {
+            font-family: "THSarabunbold";
+            font-style: normal;
+            font-weight: bolder;
+            /* src: url("{{ asset('pdf_fonts/THSarabun Bold.ttf')}}") format("truetype"); */
+            src: url('pdf_fonts/THSarabun Bold.ttf') format("truetype");
+        }      
+        body {
+            font-family: "THSarabun";
+            font-size: 25px; color: #000; 
+            background: #fff !important; line-height: 1.2;
+            padding-bottom:1.62cm; margin-top: 5px;
+        }
+        table {
+            border-collapse: collapse;  border:0; margin-bottom: 0;
+        }
+        th, td {
+            font-size: 20px; line-height: 22px;
+            border-collapse: collapse; vertical-align: top;
+            padding:4px 5px;
+            border-collapse: collapse;
+        }
+        th, strong {
+            font-weight: bold;
+            font-family: "THSarabunbold";
+        }
+        img {
+            line-height: 1; vertical-align: top;
+        }
+        li , p {  margin-top:0; margin-bottom:2px; }
+        input { margin:0; margin-right:2px;  vertical-align:middle;  }
+        .border-0 { border:0; }
+        .border-0 td, .border-0 th { border:0 }
+    
+        a {
+            color: #000; text-decoration: none;
+        }
+        .title {
+            font-family: "THSarabunbold"; font-size: 30px;
+            line-height: 34px;
+        }
+        .sub-title {
+            font-family: "THSarabunbold"; font-size: 24px;
+            line-height: 28px; 
+        }
+        .data-table th ,
+        .data-table td {
+            padding: 15px;
+        }
+       
+    </style>
+
+    <body>
+
+  
+    
+    <div style="padding-left:10px; padding-right:10px;">
+    <table cellspacing="0" cellpadding="0" border="0" align="center" style="padding:10px 0; width:770; font-family: 'THSarabun';">
+        <!-- First row logo section-->
+        <tr>
+            <td style="padding-top: 15px; padding-bottom:15px;">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td style="width: 100px; padding-right:25px;"><img src="images/logo.png" alt="logo" height="52" style="max-height:50px;"></td>
+                        <td style="vertical-align: bottom;">                                
+                            <strong>SEP demo company</strong>           
+                        </td>
+                        <td align="right" style="padding: 0;">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td style="text-align: right; padding-right: 8px;"><strong>Order No.: </strong></td>
+                                    <td>INV20210500039</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right; padding-right: 8px;"><strong>Date:</strong></td>
+                                    <td>01/01/2024 </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+        <!-- Second row File upload section-->
+        <tr>
+            <td style="padding-top: 5px;">
+    
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" class="data-table">
+                    <tr>
+                        <td class="sub-title" style="border:1px solid #000; background: #DCDCDC; text-align: center; padding-top: 10px; padding-bottom: 10px; width: 50%;">Tracking No.</td>
+                        <td class="sub-title" style="border:1px solid #000; background: #DCDCDC; text-align: center; padding-top: 10px; padding-bottom: 10px;">Order No.</td>
+
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000; text-align: center;">
+                            <img src="images/barcode.png" alt="images">
+                        </td>
+                        <td style="border:1px solid #000; text-align: center;">
+                            <img src="images/barcode2.png" alt="images">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000;" class="sub-title">
+                            Sender <br>
+                        </td>
+                        <td style="border:1px solid #000;" class="sub-title">
+                            Receiver <br>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000;">SEP demo Company Limited <br>78/75, Charoen Rat, Bang Khlo, Bang Kho Laem, <br>Bangkok, 10120 <br> 062-432-126</td>
+                        <td style="border:1px solid #000;">Ammy Wong <br> 1712 , Khwaeng Wat Phraya Krai, Khet Bang Kho Laem, <br> Bangkok, Thailand, 10120 <br> 091-819-2555</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000;" class="sub-title">
+                            Remark <br>
+                        </td>
+                        <td style="border:1px solid #000;" class="sub-title">
+                            Logistic company <br>
+                            <img src="images/logo-kerry.png" alt="img">
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+
+        <!-- 3rd row  section-->
+       
+
+       
+
+
+
+    </table>
+    </div>
+ 
+    </body>
+</html>
